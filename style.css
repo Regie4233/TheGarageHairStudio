@@ -169,7 +169,7 @@ body {
 section {
     min-height: 90vh;
     max-height: 170vh;
-    background-image: url(./images/bgs/rice-paper-2.png);
+    background-image: url("./images/bgs/rice-paper-2.png");
     background-color: hsl(39, 73%, 87%);
     padding: 1rem 1rem;
 }
@@ -189,7 +189,7 @@ section ul {
 }
 
 section li {
-    background: url(./images/bgs/rice-paper-2.png) var(--color_thirthy);
+    background: url("./images/bgs/rice-paper-2.png") var(--color_thirthy) repeat;
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
@@ -248,7 +248,7 @@ ul {
 /* end galley Section  */
 footer {
     min-height: 40vh;
-    background: url(/images/bgs/subtle-stripes.png) var(--color_thirthy);
+    background: url("/images/bgs/subtle-stripes.png") var(--color_thirthy) repeat;
     padding: 2rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
