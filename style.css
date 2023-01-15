@@ -71,7 +71,7 @@ body {
 /* start Hero Section  */
 .op-bg {
 
-    background-image: url('/images/bgs/Sun-rays.jfif');
+    background-image: url('./images/bgs/Sun-rays.jfif');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 60%;
@@ -248,7 +248,7 @@ ul {
 /* end galley Section  */
 footer {
     min-height: 40vh;
-    background: url("/images/bgs/subtle-stripes.png") var(--color_thirthy) repeat;
+    background: url("./images/bgs/subtle-stripes.png") var(--color_thirthy) repeat;
     padding: 2rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
