@@ -32,6 +32,10 @@
     --footer_map_size: clamp(160px, 20vw, 300px);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 main header {
     font-family: 'Gentium Plus', serif;
     background-image: url('./images/bgs/vintage-speckles.png');
