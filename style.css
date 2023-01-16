@@ -295,6 +295,10 @@ footer a{
     color: white;
     margin: 0.5rem;
     padding: 1rem;
+    
+}
+.followus{
+    position: relative; 
 }
 
 
@@ -314,6 +318,13 @@ a:visited{
 .row-span-2 {
     grid-row: span 2;
 }
+
+/* misc */
+.decor2{
+    position: absolute;
+    content: "";
+}
+
 
 @media (max-width: 909px) {
     /* .col-span-2 {
