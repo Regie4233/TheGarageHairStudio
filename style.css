@@ -243,7 +243,7 @@ ul {
     max-height: var(--gallery_panorama_size_h);
     height: auto;
     width: auto;
-    
+    margin: 0.8rem;
 }
 
 /* end galley Section  */
@@ -288,12 +288,13 @@ footer a{
 
 .followus a{
    
-    border-radius: 40%;
+    border-radius: 20px;
     border-width: 2px;
     padding: 1rem;
     background-color: rgb(132, 132, 198);
     color: white;
-    margin: 1rem;
+    margin: 0.5rem;
+    padding: 1rem;
 }
 
 
