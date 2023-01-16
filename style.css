@@ -13,7 +13,8 @@
     --color_dividers: #401E17;
 
     --header_title: clamp(2.2rem, 10vw, 4rem);
-    --header_nav: clamp(0.6rem, 2vw, 1.2rem);;
+    --header_nav: clamp(0.6rem, 2vw, 1.2rem);
+
 
     --hero_img_size: clamp(100px, 8vw, 300px);
     --hero_logo_size: clamp(170px, 10vw, 300px);
@@ -22,9 +23,11 @@
     --hero_booknow_size_height: clamp(30px, 10vw, 60px);
     --hero_booknow_size_width: clamp(120px, 12vw, 300px);
 
-    --gallery_img_size: clamp(130px, 20vw, 200px);
+    --gallery_img_size_w: clamp(130.5px, 20vw, 261.6px);
+    --gallery_img_size_h: clamp(164.4px, 20vw, 328.8px);
     --galley_deco_img_size: clamp(80px, 13vw, 200px);
-    --gallery_panorama_size_width: clamp(330px, 48vw, 500px);
+    --gallery_panorama_size_w: clamp(307.2px, 42vw, 614.4px);
+    --gallery_panorama_size_h: clamp(230.4px, 42vw, 460.8px);
 
     --footer_map_size: clamp(160px, 20vw, 300px);
 }
@@ -170,7 +173,7 @@ body {
 
 section {
     min-height: 60vh;
-    max-height: 170vh;
+    max-height: 210vh;
     background-image: url("./images/bgs/rice-paper-2.png");
     background-color: hsl(39, 73%, 87%);
     padding: 1rem 1rem;
@@ -178,12 +181,10 @@ section {
 
 section ul {
     display: grid;
-    /* grid-template-columns: repeat(4, minmax(50px, 1fr));
-    grid-template-rows: repeat(6, minmax(50px, 1fr)); */
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    padding: 1rem 0.2rem;
-    row-gap: 0.2rem;
+    padding: 1rem 0.5rem;
+    row-gap: 0.8rem;
     column-gap: 1rem;
     justify-content: center;
     align-content: center;
@@ -198,14 +199,20 @@ section li {
     justify-content: space-evenly;
     align-content: center;
     gap: 1rem;
-    padding: 0rem;
-    border: solid white 4px;
+    margin: 0.1rem;
+    border: solid var(--color_dividers) 2px;
 }
 
 .content img {
-    height: var(--gallery_img_size);
-    width: var(--gallery_img_size);
-
+    /* height: var(--gallery_img_size);
+    width: var(--gallery_img_size); */
+    display: block;
+    max-width: var(--gallery_img_size_w);
+    max-height: var(--gallery_img_size_h);
+    width: auto;
+    height: auto;
+    
+    border: 4px var(--color_thirthy) solid;
 }
 
 .content p {
@@ -232,9 +239,11 @@ ul {
     flex-direction: row;
 }
 .middle-gallery img{
+    max-width: var(--gallery_panorama_size_w);
+    max-height: var(--gallery_panorama_size_h);
     height: auto;
-    width: var(--gallery_panorama_size_width);
-    padding: 1rem;
+    width: auto;
+    
 }
 
 /* end galley Section  */
