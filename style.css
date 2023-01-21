@@ -447,13 +447,19 @@ a:visited {
 /* End Services Styles */
 
 /* Start About Us Page */
+
+.aboutus-page{
+    /* min-height: 170px !important; */
+    max-height: 180vh !important;
+}
+
 .aboutus-page article{
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     font-weight: 600;
-    padding: 0 4rem 1rem 4rem;
+    padding: 0 4rem 4rem;
     gap: 1rem;
 }
 .aboutus-page p {
@@ -466,7 +472,7 @@ a:visited {
 
 .aboutus-page img{
     max-width: clamp(97.6px, 40vw, 244px);
-    max-height: clamp(130px, 40vw, 325px);
+    max-height: clamp(130px, 80vw, 325px);
     width: auto;
     height: auto;
 
@@ -539,5 +545,9 @@ a:visited {
 
     .services {
         padding: 3rem 0;
+    }
+    .aboutus-page article{
+        flex-direction: column;
+        padding: 0 2rem 4rem;
     }
 }
