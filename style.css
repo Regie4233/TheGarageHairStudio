@@ -451,6 +451,11 @@ a:visited {
 .aboutus-page{
     /* min-height: 170px !important; */
     max-height: 180vh !important;
+    display: flex;
+    flex-direction: column;
+
+    padding: clamp(2rem, 12vw, 8rem);
+    gap: 2rem;
 }
 
 .aboutus-page article{
@@ -459,15 +464,26 @@ a:visited {
     flex-direction: row;
     justify-content: space-evenly;
     font-weight: 600;
-    padding: 0 4rem 4rem;
     gap: 1rem;
+    padding: 2rem;
+
+    
+    background-color: var(--color_thirthy);
+    background-image: url("./images/bgs/rice-paper-2.png");
+
+    border: 8px outset var(--color_thirthy);
+
+    box-shadow: 10px 10px 15px black;
 }
 .aboutus-page p {
     font-size: var(--header_nav);
-    color: var(--color_thirthy);
+    color: var(--color_ten);
 }
 .aboutus-page h2{
-    padding: 2rem 0 0 5rem;
+    color: var(--color_ten);
+    font-size: clamp(1rem, 20vw, 2rem);
+    text-align: center;
+    padding: clamp(0.2rem, 20vw, 1rem);
 }
 
 .aboutus-page img{
@@ -475,7 +491,8 @@ a:visited {
     max-height: clamp(130px, 80vw, 325px);
     width: auto;
     height: auto;
-
+    align-self: center;
+    padding: 1rem 0;
 }
 /* End About Us Page */
 
@@ -519,8 +536,14 @@ a:visited {
     }
 }
 
-@media (width <=585px) {
+@media (width <= 782px){
+    .content {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
 
+
+@media (width <=585px) {
 
     .content {
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
