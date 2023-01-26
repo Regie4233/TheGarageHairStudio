@@ -450,7 +450,7 @@ a:visited {
 
 .aboutus-page{
     /* min-height: 170px !important; */
-    max-height: 180vh !important;
+    max-height: 250vh !important;
     display: flex;
     flex-direction: column;
 
@@ -471,28 +471,36 @@ a:visited {
     background-color: var(--color_thirthy);
     background-image: url("./images/bgs/rice-paper-2.png");
 
-    border: 8px outset var(--color_thirthy);
+    border: clamp(4px, 1vw, 8px) outset var(--color_thirthy);
 
-    box-shadow: 10px 10px 15px black;
+    /* box-shadow: 10px 10px 15px black; */
 }
 .aboutus-page p {
-    font-size: var(--header_nav);
+    font-size: clamp(0.85rem, 2vw, 1.2rem);
     color: var(--color_ten);
 }
 .aboutus-page h2{
     color: var(--color_ten);
     font-size: clamp(1rem, 20vw, 2rem);
     text-align: center;
-    padding: clamp(0.2rem, 20vw, 1rem);
+    padding: clamp(0.2rem, 2vw, 1rem);
 }
 
 .aboutus-page img{
-    max-width: clamp(97.6px, 40vw, 244px);
-    max-height: clamp(130px, 80vw, 325px);
+   
     width: auto;
     height: auto;
     align-self: center;
     padding: 1rem 0;
+}
+
+.aboutus-page img:nth-child(1){
+    max-width: clamp(97.6px, 70vw, 258px);
+    max-height: clamp(130px, 70vw, 325px);
+}
+.aboutus-page img:nth-child(2){
+    max-width: clamp(97.6px, 70vw, 244px);
+    max-height: clamp(130px, 70vw, 325px);
 }
 /* End About Us Page */
 
