@@ -305,7 +305,7 @@ footer span {
     position: relative;
 }
 
-
+/* misc */
 
 a:any-link {
     text-decoration: none;
@@ -332,6 +332,12 @@ a:visited {
     color: var(--color_thirthy);
 }
 
+.endofpage{
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem;
+}
+/* end misc */
 
 
 
@@ -525,6 +531,10 @@ a:visited {
     background-color: var(--color_thirthy);
 }
 /* End About Us Page */
+
+
+
+
 
 @media (max-width: 909px) {
 
