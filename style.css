@@ -28,8 +28,8 @@
 
     --gallery_img_size_w: clamp(130.5px, 20vw, 261.6px);
     --gallery_img_size_h: clamp(164.4px, 20vw, 328.8px);
-    /* --gallery_img_size_w: clamp(80.5px, 12vw, 261.6px);
-    --gallery_img_size_h: clamp(120.4px, 12vw, 328.8px);  */
+    /* --gallery_img_size_w: clamp(78.3px, 12vw, 261.6px);
+    --gallery_img_size_h: clamp(72.24px, 12vw, 328.8px);  */
     --galley_deco_img_size: clamp(80px, 13vw, 200px);
     --gallery_panorama_size_w: clamp(307.2px, 40vw, 959.1px);
     --gallery_panorama_size_h: clamp(230.4px, 40vw, 552.8px);
@@ -253,7 +253,7 @@ ul {
 /* end galley Section  */
 footer {
     min-height: 30vh;
-    max-height: 67vh;
+    max-height: 72vh;
     background: url("./images/bgs/subtle-stripes.png") var(--color_thirthy) repeat;
     padding: 2rem;
     display: grid;
@@ -309,12 +309,9 @@ footer span {
 
 a:any-link {
     text-decoration: none;
-    text-decoration: none;
-}
-
-a:visited {
     color: var(--color_ten);
 }
+
 
 .col-span-2 {
     grid-column: span 2;
@@ -583,7 +580,7 @@ a:visited {
 }
 
 
-@media (width <=585px) {
+@media (width <= 585px) {
 
     .content {
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -613,4 +610,41 @@ a:visited {
         flex-direction: column;
         padding: 0 2rem 4rem;
     }
+}
+
+@media not all and (min-resolution:.001dpcm) 
+{
+    
+    .content {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    footer iframe {
+        grid-row: span 1;
+    }
+
+    .deco3-container {
+        padding: 1rem 1rem;
+    }
+
+    .selections {
+        padding: 1rem;
+    }
+
+    .services {
+        padding: 3rem 0;
+    }
+    .aboutus-page article{
+        flex-direction: column;
+        padding: 0 2rem 4rem;
+    }
+    a:any-link {
+        text-decoration: none;
+        color: var(--color_ten);
+    } 
+
 }
